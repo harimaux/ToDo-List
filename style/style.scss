@@ -10,20 +10,21 @@ $fontColorDark: rgb(58, 57, 57);
 $fontColorWarning: rgb(158, 15, 15);
 
 body {
-    background-image: linear-gradient(rgb(190, 188, 207), rgb(114, 142, 202));
-    height: 100vh;
     font-family: 'Grape Nuts', cursive;
 }
 
-.container {
+.mainContainer {
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-top: 80px;
+    padding-top: 80px;
+
+    background-image: linear-gradient(rgb(190, 188, 207), rgb(114, 142, 202));
+    min-height: 100vh;
 
     h1 {
         font-size: 60px;
+        font-weight: 800;
         color: $fontColorDark;
     }
 
@@ -47,6 +48,8 @@ body {
         background: inherit;
         border: solid 2px $fontColorDark;
         border-radius: 5px;
+        font-weight: 600;
+        font-size: 20px;
     }
 
     button {
@@ -55,6 +58,8 @@ body {
         background: inherit;
         border: solid 2px $fontColorDark;
         border-radius: 5px;
+        font-weight: 800;
+        font-size: 20px;
     }
 }
 
@@ -63,10 +68,11 @@ body {
 
     li {
         font-size: 25px;
-        list-style: none;
+        list-style: decimal;
         border-bottom: solid 1px $fontColorDark;
         width: 400px;
         margin-bottom: 2rem;
+        font-weight: 600;
 
         -webkit-user-select: none;
         -moz-user-select: none;
@@ -77,4 +83,41 @@ body {
 
 .lineThroughToggle {
     text-decoration: line-through;
+}
+
+#infoIcon {
+    margin: 1rem;
+    cursor: pointer;
+    position: absolute;
+}
+
+.infoBox {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border: solid 1px $fontColorDark;
+    width: 300px;
+    border-radius: 10px;
+    margin-left: 1rem;
+    margin-top: 5rem;
+    visibility: hidden;
+    position: absolute;
+    background-color: rgb(190, 188, 207);
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    
+    h4 {
+        margin: 1rem;
+    }
+
+    li {
+        margin-bottom: 0.5rem;
+    }
+}
+
+.infoBoxVisibilityToggle {
+    visibility: visible;
 }

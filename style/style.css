@@ -8,19 +8,13 @@
 }
 
 body {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#bebccf), to(#728eca));
-  background-image: linear-gradient(#bebccf, #728eca);
-  height: 100vh;
   font-family: 'Grape Nuts', cursive;
 }
 
-.container {
+.mainContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -28,15 +22,19 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 80px;
+  padding-top: 80px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#bebccf), to(#728eca));
+  background-image: linear-gradient(#bebccf, #728eca);
+  min-height: 100vh;
 }
 
-.container h1 {
+.mainContainer h1 {
   font-size: 60px;
+  font-weight: 800;
   color: #3a3939;
 }
 
-.container h3 {
+.mainContainer h3 {
   font-size: 40px;
   color: #9e0f0f;
 }
@@ -52,6 +50,8 @@ body {
   background: inherit;
   border: solid 2px #3a3939;
   border-radius: 5px;
+  font-weight: 600;
+  font-size: 20px;
 }
 
 .inputForm button {
@@ -60,6 +60,8 @@ body {
   background: inherit;
   border: solid 2px #3a3939;
   border-radius: 5px;
+  font-weight: 800;
+  font-size: 20px;
 }
 
 .notesContainer {
@@ -68,10 +70,11 @@ body {
 
 .notesContainer li {
   font-size: 25px;
-  list-style: none;
+  list-style: decimal;
   border-bottom: solid 1px #3a3939;
   width: 400px;
   margin-bottom: 2rem;
+  font-weight: 600;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -80,5 +83,40 @@ body {
 
 .lineThroughToggle {
   text-decoration: line-through;
+}
+
+#infoIcon {
+  margin: 1rem;
+  cursor: pointer;
+  position: absolute;
+}
+
+.infoBox {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  border: solid 1px #3a3939;
+  width: 300px;
+  border-radius: 10px;
+  margin-left: 1rem;
+  margin-top: 5rem;
+  visibility: hidden;
+  position: absolute;
+  background-color: #bebccf;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.infoBox h4 {
+  margin: 1rem;
+}
+
+.infoBox li {
+  margin-bottom: 0.5rem;
+}
+
+.infoBoxVisibilityToggle {
+  visibility: visible;
 }
 /*# sourceMappingURL=style.css.map */
