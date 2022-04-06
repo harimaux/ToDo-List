@@ -8,8 +8,8 @@
 }
 
 body {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#807e92), to(#3e5588));
-  background-image: linear-gradient(#807e92, #3e5588);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#bebccf), to(#728eca));
+  background-image: linear-gradient(#bebccf, #728eca);
   height: 100vh;
   font-family: 'Grape Nuts', cursive;
 }
@@ -31,18 +31,35 @@ body {
   margin-top: 80px;
 }
 
-.inputForm {
-  margin-top: 80px;
+.container h1 {
+  font-size: 60px;
+  color: #3a3939;
+}
+
+.container h3 {
+  font-size: 40px;
+  color: #9e0f0f;
+}
+
+.warningNote {
+  visibility: hidden;
 }
 
 .inputForm input {
   padding: 0.5rem;
-  width: 350px;
+  width: 320px;
+  outline: none;
+  background: inherit;
+  border: solid 2px #3a3939;
+  border-radius: 5px;
 }
 
 .inputForm button {
   padding: 0.5rem;
   width: 70px;
+  background: inherit;
+  border: solid 2px #3a3939;
+  border-radius: 5px;
 }
 
 .notesContainer {
@@ -51,5 +68,17 @@ body {
 
 .notesContainer li {
   font-size: 25px;
+  list-style: none;
+  border-bottom: solid 1px #3a3939;
+  width: 400px;
+  margin-bottom: 2rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.lineThroughToggle {
+  text-decoration: line-through;
 }
 /*# sourceMappingURL=style.css.map */

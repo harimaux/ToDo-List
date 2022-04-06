@@ -6,8 +6,11 @@
     box-sizing: border-box;
 }
 
+$fontColorDark: rgb(58, 57, 57);
+$fontColorWarning: rgb(158, 15, 15);
+
 body {
-    background-image: linear-gradient(rgb(128, 126, 146), rgb(62, 85, 136));
+    background-image: linear-gradient(rgb(190, 188, 207), rgb(114, 142, 202));
     height: 100vh;
     font-family: 'Grape Nuts', cursive;
 }
@@ -18,19 +21,40 @@ body {
     flex-direction: column;
     align-items: center;
     margin-top: 80px;
+
+    h1 {
+        font-size: 60px;
+        color: $fontColorDark;
+    }
+
+    h3 {
+        font-size: 40px;
+        color: $fontColorWarning;
+    }
+}
+
+.warningNote {
+    visibility: hidden;
 }
 
 .inputForm {
-    margin-top: 80px;
+
 
     input {
         padding: 0.5rem;
-        width: 350px;
+        width: 320px;
+        outline: none;
+        background: inherit;
+        border: solid 2px $fontColorDark;
+        border-radius: 5px;
     }
 
     button {
         padding: 0.5rem;
         width: 70px;
+        background: inherit;
+        border: solid 2px $fontColorDark;
+        border-radius: 5px;
     }
 }
 
@@ -39,5 +63,18 @@ body {
 
     li {
         font-size: 25px;
+        list-style: none;
+        border-bottom: solid 1px $fontColorDark;
+        width: 400px;
+        margin-bottom: 2rem;
+
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
     }
+}
+
+.lineThroughToggle {
+    text-decoration: line-through;
 }
