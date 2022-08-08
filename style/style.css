@@ -3,44 +3,33 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Grape Nuts', cursive;
+  font-family: "Grape Nuts", cursive;
 }
 
 .mainContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   padding-top: 80px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#bebccf), to(#728eca));
-  background-image: linear-gradient(#bebccf, #728eca);
+  background-image: linear-gradient(rgb(190, 188, 207), rgb(114, 142, 202));
   min-height: 100vh;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
-
 .mainContainer h1 {
   font-size: 60px;
   font-weight: 800;
-  color: #3a3939;
+  color: rgb(58, 57, 57);
 }
-
 .mainContainer h3 {
   font-size: 40px;
-  color: #9e0f0f;
+  color: rgb(158, 15, 15);
 }
 
 .warningNote {
@@ -52,17 +41,16 @@ body {
   width: 320px;
   outline: none;
   background: inherit;
-  border: solid 2px #3a3939;
+  border: solid 2px rgb(58, 57, 57);
   border-radius: 5px;
   font-weight: 600;
   font-size: 20px;
 }
-
 .inputForm button {
   padding: 0.5rem;
   width: 70px;
   background: inherit;
-  border: solid 2px #3a3939;
+  border: solid 2px rgb(58, 57, 57);
   border-radius: 5px;
   font-weight: 800;
   font-size: 20px;
@@ -75,12 +63,12 @@ body {
 .notesContainer {
   margin-top: 50px;
 }
-
 .notesContainer li {
   font-size: 25px;
   list-style: decimal;
-  border-bottom: solid 1px #3a3939;
+  border-bottom: solid 1px rgb(58, 57, 57);
   width: 400px;
+  word-wrap: break-word;
   margin-bottom: 2rem;
   font-weight: 600;
   -webkit-user-select: none;
@@ -102,29 +90,26 @@ body {
 .infoBox {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  border: solid 1px #3a3939;
+  border: solid 1px rgb(58, 57, 57);
   width: 340px;
   border-radius: 10px;
   margin-left: 1rem;
   margin-top: 5rem;
   visibility: hidden;
   position: absolute;
-  background-color: #bebccf;
+  background-color: rgb(190, 188, 207);
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
-
 .infoBox h4 {
   margin: 1rem;
 }
-
 .infoBox li {
   margin-bottom: 0.5rem;
 }
 
 .infoBoxVisibilityToggle {
   visibility: visible;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
